@@ -1,0 +1,168 @@
+/* Definisce la struttura base della navbar */
+body {
+    /* Aggiunge un gradiente di sfondo. Commentato per ora. */
+    /* background: linear-gradient(10deg, #2c3e50, #3498db); */
+    margin: 0%;  /* Elimina spazi esterni (margin) */
+    width: 100%; /* Imposta la larghezza al 100% della finestra */
+    height: 100%; /* Imposta l'altezza al 100% della finestra */
+}
+
+a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+}
+
+.background {
+    /* Crea un gradiente di sfondo con angolo di 160 gradi */
+    background-image: linear-gradient(160deg, #492968 0%, #0d2b35 100%);
+    background-repeat: repeat; /* Ripete il background */
+    background-size: 2000px 1500px; /* Dimensioni della texture di background */
+}
+
+.navbar {
+    text-shadow: 0 5px 10px rgba(196, 194, 194, 0.5); /* Ombra per il testo */
+     /* Allinea il testo al centro */
+    font-family: sans-serif; /* Imposta la famiglia di font */
+    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    padding: 10px 20px; /* Padding interno alla navbar */
+    /* Gradiente orizzontale come sfondo */
+    background: linear-gradient(90deg, #b037bb, #3498db);
+    border-bottom-left-radius: 10px; /* Arrotonda l'angolo inferiore sinistro */
+    border-bottom-right-radius: 10px; /* Arrotonda l'angolo inferiore destro */
+    /* Aggiunge ombra sotto la navbar */
+    box-shadow: 0 5px 10px rgba(192, 191, 191, 0.5);
+    transition: 0.5s; /* Aggiunge una transizione per gli effetti di animazione */
+}
+
+/* Stile per il logo della navbar */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    text-align: center; /* Allinea il testo al centro */
+    font-size: 2em; /* Dimensione del font */
+    font-weight: bold; /* Font in grassetto */
+    color: white; /* Colore del testo bianco */
+    text-transform: uppercase; /* Testo maiuscolo */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+}
+.logo p {
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-right: 10px; /* Aggiungi un po' di spazio tra il testo e l'immagine */
+    text-align: center;
+    flex: 1;
+    padding-right: 10px; /* Aggiungi un po' di spazio tra il testo e l'immagine */
+}
+.logo ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    margin-left: 10px; /* Spazio tra l'immagine e la lista se necessario */
+}
+
+
+.immagine {
+    /* Aggiunge un margine superiore di 20px */
+    margin-top: 20px;
+    display: block; /* Rende l'elemento un blocco */
+    margin-left: auto; /* Centro di auto-spaziatura orizzontale */
+    margin-right: auto; /* Centro di auto-spaziatura orizzontale */
+    width: 20%; /* Imposta la larghezza dell'immagine al 20% */
+}
+
+.scritta_principale {
+    text-align: center; /* Allinea il testo al centro */
+    font-size: 1.5em; /* Dimensione del font */
+    font-family: monospace; /* Utilizza un font monospace */
+    color: #fff; /* Colore del testo bianco */
+    text-shadow: /* Ombra per il testo con vari livelli */
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 100px #0ff,
+        0 0 190px #0ff;
+}
+
+.scritta_bianca {
+    font-size: 1.5em; /* Dimensione del font */
+}
+
+.scritta_rossa {
+    font-family: monospace; /* Font monospace */
+    text-align: center; /* Allinea il testo al centro */
+    font-size: 2em; /* Dimensione del font */
+    color: #fff; /* Colore del testo bianco */
+    text-shadow: /* Ombra per il testo */
+        0 0 5px #c663ff,
+        0 0 10px #c663ff,
+        0 0 20px #c663ff,
+        0 0 10px #9ce6ff,
+        0 0 16px #9ce6ff;
+    transition: 0.7s; /* Aggiunge transizione per effetti di hover */
+}
+
+.scritta_rossa:hover {
+    /* Cambia proprietà su hover */ 
+    font-weight: 300; /* Font meno spesso */
+    font-size: 2.1em; /* Aumenta la dimensione del font */
+    text-shadow: /* Cambia l'ombra del testo */
+        0 0 5px #f0adad,
+        0 0 10px #f0adad,
+        0 0 20px #f0adad,
+        0 0 10px rgb(255, 255, 255),
+        0 0 12px rgb(255, 255, 255);
+}
+
+.pulsante_social {
+    margin-top: 100px; /* Aggiunge uno spazio di 100 pixel tra l'elemento e il contenuto precedente, spostandolo verso il basso. */
+    margin-bottom: 100px;
+    display: block; /* Imposta l'elemento come un blocco, consentendogli di occupare l'intera larghezza disponibile e di essere centinato con margini. */
+    margin-left: auto; /* Centra l'elemento orizzontalmente, assegnando automaticamente i margini sinistro e destro. */
+    margin-right: auto; /* Centra l'elemento orizzontalmente come sopra. */
+    
+    background-image: linear-gradient(50deg, #7713db 0%, #04a6db 100%); /* Applica uno sfondo con un gradiente lineare che parte da un colore viola e termina in azzurro, con un angolo di 50 gradi. */
+    border-radius: 100px; /* Arrotonda gli angoli dell'elemento, creando un effetto di forma circolare o ovale. */
+    color: rgb(255, 255, 255); /* Imposta il colore del testo a bianco. */
+    cursor: pointer; /* Modifica l'aspetto del cursore quando si passa sopra l'elemento per indicare che è interattivo (solitamente a forma di mano). */
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif; /* Definisce le famiglie di caratteri da utilizzare, con fallback in caso di indisponibilità. */
+    
+    padding: 20px 80px; /* Aggiunge spaziatura interna, con 20 pixel in alto/basso e 80 pixel a sinistra/destra. */
+    text-align: center; /* Centra il testo all'interno dell'elemento. */
+    text-decoration: none; /* Rimuove qualsiasi decorazione del testo (come sottolineature), rendendo il testo più pulito. */
+    transition: all 250ms; /* Applica una transizione fluida per tutte le proprietà che cambiano, in 250 millisecondi. */
+    
+    border: 0; /* Rimuove qualsiasi bordo esterno attorno all'elemento, creando un aspetto più piatto. */
+    font-size: 16px; /* Imposta la dimensione del testo a 16 pixel. */
+    
+    user-select: none; /* Impedisce la selezione del testo, utile per elementi interattivi. */
+    -webkit-user-select: none; /* Come sopra, ma per i browser WebKit (Safari, Chrome). */
+    touch-action: manipulation; /* Ottimizza l'interazione per dispositivi touchscreen, evitando azioni non volute come il pinch-to-zoom. */
+    
+    transition: 0.5s; /* Imposta una transizione uniforme per tutte le proprietà in mezzo secondo, offrendo un'animazione fluida. */
+}
+
+.pulsante_social:hover {
+    padding: 30px 90px; /* Aumenta la spaziatura interna durante il passaggio del mouse, creando un effetto di espansione. */
+    
+    box-shadow: /* Aggiunge un'ombra intorno all'elemento per creare profondità. */
+        0 0 5px #c560ff44, /* Ombra leggera con colore viola chiaro. */
+        0 0 10px #c560ff44, /* Ombra leggermente più grande. */
+        0 0 20px #c560ff44, /* Un'ombra più ampia per dare l'effetto di profondità. */
+        0 0 100px #dd8fff7e, /* Ombra ancora più estesa per dare un effetto glow. */
+        0 0 120px #dd8fff7e; /* L'ombra più grande, enfatizzando il bagliore. */
+    
+    text-shadow: /* Aggiunge un'ombra al testo all'interno dell'elemento. */
+        0 0 5px #f0adad, /* Un'ombra sottile attorno al testo. */
+        0 0 10px #f0adad, /* Un'ombra leggermente più grande. */
+        0 0 20px #f0adad, /* Ancora più ampia. */
+        0 0 100px rgb(255, 255, 255), /* Crea un bagliore bianco attorno al testo. */
+        0 0 120px rgb(255, 255, 255); /* Un'ombra ancora più ampia per un effetto di maggiore profondità. */
+}
+#nav {
+    position: relative;
+    cursor: pointer;
+}
